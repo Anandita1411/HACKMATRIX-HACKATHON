@@ -7,7 +7,7 @@ Lunar Flo is a mobile application designed to help users track their menstrual c
 ## Features
 
 *  Track menstrual cycle dates
-*  redict next period using cycle length
+*  Predict next period using cycle length
 *  Log daily symptoms (mood, cramps, energy)
 *  Get reminders for upcoming periods
 *  View cycle insights and history
