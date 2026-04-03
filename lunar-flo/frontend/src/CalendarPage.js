@@ -21,30 +21,44 @@ function CalendarPage() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>📅 Calendar</h2>
+  <div style={{ padding: "20px", color: "white" }}>
+    <h2>📅 Calendar</h2>
 
+    <div style={{
+      background: "white",
+      borderRadius: "20px",
+      padding: "10px",
+      color: "black"
+    }}>
       <Calendar onChange={setDate} value={date} />
-
-      <button
-        onClick={logPeriod}
-        style={{
-          marginTop: "10px",
-          padding: "10px",
-          borderRadius: "10px",
-          background: "#ff4d9d",
-          color: "white",
-          border: "none"
-        }}
-      >
-        Log Period
-      </button>
-
-      <p style={{ marginTop: "10px" }}>
-        Logged: {periods.length} days
-      </p>
     </div>
-  );
+
+    <button
+      onClick={logPeriod}
+      style={{
+        marginTop: "15px",
+        width: "100%",
+        padding: "12px",
+        borderRadius: "15px",
+        background: "#ff4d9d",
+        color: "white",
+        border: "none",
+        fontWeight: "bold"
+      }}
+    >
+      💧 Log Period
+    </button>
+
+    <div style={{ marginTop: "15px" }}>
+      <p>Logged Dates:</p>
+      {periods.map((p, i) => (
+        <p key={i} style={{ fontSize: "12px", color: "#aaa" }}>
+          {p}
+        </p>
+      ))}
+    </div>
+  </div>
+);
 }
 
 export default CalendarPage;

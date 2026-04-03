@@ -7,10 +7,22 @@ function App() {
   const [page, setPage] = useState("home");
 
   return (
-    <div style={{ background: "#0b0f1a", minHeight: "100vh", color: "white" }}>
+    <div
+      style={{
+        maxWidth: "400px",
+        margin: "auto",
+        background: "radial-gradient(circle at top, #1a002f, #000)",
+        minHeight: "100vh",
+        color: "white",
+        position: "relative",
+        overflow: "hidden"
+      }}
+    >
+      {/* PAGES */}
       {page === "home" && <Dashboard />}
       {page === "calendar" && <CalendarPage />}
 
+      {/* NAVBAR */}
       <Navbar setPage={setPage} />
     </div>
   );
