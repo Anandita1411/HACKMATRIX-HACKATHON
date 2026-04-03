@@ -1,8 +1,8 @@
 # HACKMATRIX-HACKATHON
-# Period Tracker App (LunaFlow)
+# Period Tracker App (Lunar Flo)
   Overview
 
-LunaFlow is a mobile application designed to help users track their menstrual cycle, predict upcoming periods, and monitor symptoms. The app provides a simple and user-friendly interface for better health awareness and planning.
+Lunar Flo is a mobile application designed to help users track their menstrual cycle, predict upcoming periods, and monitor symptoms. The app provides a simple and user-friendly interface for better health awareness and planning.
 
 ## Features
 
